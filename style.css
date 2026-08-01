@@ -253,3 +253,51 @@ footer {
     transform: translateY(-4px) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6);
 }
+
+/* --- ANIMATED AVATAR STYLES --- */
+.profile-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar svg {
+  filter: drop-shadow(0 0 10px rgba(88, 166, 255, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover svg {
+  transform: scale(1.08); /* Hover par thoda zoom hoga */
+}
+
+/* Outer Border Rotating Animation */
+.glowing-ring {
+  transform-origin: center;
+  animation: rotateRing 12s linear infinite;
+}
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Inner Code Brackets Pulse Animation */
+.bracket, .slash {
+  animation: pulseCode 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulseCode {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px #58a6ff);
+  }
+}
+
