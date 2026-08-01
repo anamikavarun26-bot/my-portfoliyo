@@ -1,33 +1,22 @@
-// 1. Smooth Scroll for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-// 2. Floating Back to Top Button Creation
+// Dynamic Creation of Back to Top Button
 const topBtn = document.createElement('button');
 topBtn.innerHTML = '▲';
 topBtn.id = 'backToTop';
-topBtn.setAttribute('aria-label', 'Back to top');
+topBtn.setAttribute('title', 'Back to Top');
 document.body.appendChild(topBtn);
 
-// Show / Hide button on scroll
+// Show / Hide button based on scroll position
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 250) {
         topBtn.classList.add('show');
     } else {
         topBtn.classList.remove('show');
     }
 });
 
-// Click to scroll up smoothly
+// Smooth Scroll to Top on click
 topBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-console.log("Portfolio JavaScript & Button Effects Active!");
+console.log("Portfolio JavaScript Active!");
