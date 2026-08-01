@@ -1,208 +1,188 @@
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* --- Global Dark Theme & Variables --- */
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --accent-color: #00adb5;
+    --accent-hover: #008c93;
+    --text-color: #eeeeee;
+    --text-muted: #b3b3b3;
+    --border-color: #0f3460;
+}
 
-/* Universal Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Background & Body Styling */
 body {
-  background: #0b0f19;
-  color: #e2e8f0;
-  line-height: 1.6;
-  padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Header / Hero Section */
+/* Header & Hero Area */
 header {
-  text-align: center;
-  padding: 80px 20px 60px 20px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(11, 15, 25, 1) 75%);
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -0.5px;
+header h1 {
+    font-size: 2.8rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
 }
 
-p.tagline {
-  font-size: 1.25rem;
-  color: #94a3b8;
-  margin-top: 10px;
-  font-weight: 400;
+header .tagline {
+    font-size: 1.2rem;
+    color: var(--text-muted);
 }
 
-/* Glassmorphism Section Cards */
+/* Sections Styling */
 section {
-  max-width: 950px;
-  margin: 40px auto;
-  padding: 35px 30px;
-  background: rgba(30, 41, 59, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: border-color 0.3s ease, transform 0.3s ease;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
 }
 
-section:hover {
-  border-color: rgba(56, 189, 248, 0.3);
+section h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
-h2 {
-  color: #38bdf8;
-  font-size: 1.75rem;
-  font-weight: 600;
-  border-bottom: 2px solid #334155;
-  padding-bottom: 8px;
-  margin-bottom: 25px;
-  display: inline-block;
-}
-
-/* Tech Stack Skills Pills */
+/* Skills Container & Interactive Pills */
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .skill-pill {
-  background: #1e293b;
-  color: #38bdf8;
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  cursor: default;
+    background: var(--border-color);
+    color: var(--text-color);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 173, 181, 0.2);
 }
 
 .skill-pill:hover {
-  background: #38bdf8;
-  color: #0b0f19;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
-  transform: translateY(-3px);
+    background: var(--accent-color);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 173, 181, 0.4);
 }
 
-/* Featured Projects Grid */
+/* Projects Grid & Interactive Hover Cards */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .project-card {
-  background: #0f172a;
-  padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #334155;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  border-color: #38bdf8;
-  box-shadow: 0 12px 25px rgba(56, 189, 248, 0.2);
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(0, 173, 181, 0.25);
 }
 
 .project-card h3 {
-  color: #f8fafc;
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-  font-weight: 600;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
 }
 
 .project-card p {
-  font-size: 0.92rem;
-  color: #94a3b8;
-  margin-bottom: 20px;
-  flex-grow: 1;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
 }
 
-.links a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 8px 16px;
-  border: 1px solid #38bdf8;
-  border-radius: 6px;
-  display: inline-block;
-  transition: all 0.3s ease;
+.project-card .links a {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.links a:hover {
-  background: #38bdf8;
-  color: #0b0f19;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+.project-card .links a:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
 }
 
 /* Contact Buttons */
+#contact {
+    text-align: center;
+}
+
 .contact-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-  color: #ffffff;
-  padding: 12px 26px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+    display: inline-block;
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    background: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
 }
 
 .linkedin-btn {
-  background: linear-gradient(135deg, #0284c7, #0369a1);
-  margin-left: 12px;
-  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+    background: #0077b5;
 }
 
 .linkedin-btn:hover {
-  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
+    background: #005582;
 }
 
-/* Footer */
 footer {
-  text-align: center;
-  padding: 40px 20px 20px 20px;
-  color: #64748b;
-  font-size: 0.88rem;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
 }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 600px) {
-  h1 { font-size: 2.2rem; }
-  p.tagline { font-size: 1rem; }
-  section { padding: 25px 20px; }
-  .contact-btn { display: block; margin-left: 0; margin-top: 12px; text-align: center; }
-}
-/* --- Floating Back to Top Button Styling --- */
+/* Floating Back to Top Button Styling */
 #backToTop {
     position: fixed;
     bottom: 30px;
     right: 30px;
     opacity: 0;
     visibility: hidden;
-    background: #00adb5; /* Theme accent color */
+    background: var(--accent-color);
     color: #ffffff;
     border: none;
     border-radius: 50%;
@@ -211,25 +191,19 @@ footer {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     z-index: 9999;
     transition: all 0.3s ease-in-out;
 }
 
-/* Scroll karne par Button visible hoga */
 #backToTop.show {
     opacity: 1;
     visibility: visible;
 }
 
-/* Hover Effect (Glow & Rotation) */
 #backToTop:hover {
-    background: #393e46;
-    transform: translateY(-3px) scale(1.1);
+    background: #ffffff;
+    color: var(--accent-color);
+    transform: translateY(-4px) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6);
-}
-
-/* Button Click State */
-#backToTop:active {
-    transform: translateY(0) scale(0.95);
 }
