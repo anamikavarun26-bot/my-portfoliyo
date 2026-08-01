@@ -271,3 +271,15 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
 }
+/* --- Resume Download Button Styling --- */
+.resume-btn {
+    background: #00b894; /* Premium Emerald Green Accent */
+    color: #ffffff;
+    border: 1px solid #55efc4;
+}
+
+.resume-btn:hover {
+    background: #009677;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+}
