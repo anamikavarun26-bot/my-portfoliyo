@@ -136,27 +136,70 @@ section h2 {
     transform: translateY(-2px);
 }
 
-/* Contact Buttons */
+/* --- Contact Section & Icon Buttons --- */
 #contact {
     text-align: center;
 }
 
-.contact-btn {
-    display: inline-block;
-    background: var(--accent-color);
-    color: #ffffff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 10px 5px;
-    transition: all 0.3s ease;
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.contact-btn:hover {
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact-btn i {
+    font-size: 1.2rem;
+}
+
+/* Button Brand Colors & Hover Effects */
+.resume-btn {
+    background: #00b894;
+    color: #ffffff;
+    border: 1px solid #55efc4;
+}
+
+.resume-btn:hover {
+    background: #009677;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+}
+
+.email-btn {
+    background: var(--accent-color);
+}
+
+.email-btn:hover {
     background: var(--accent-hover);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
+}
+
+.github-btn {
+    background: #24292e;
+    border: 1px solid #444;
+}
+
+.github-btn:hover {
+    background: #2f363d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
 .linkedin-btn {
@@ -165,8 +208,11 @@ section h2 {
 
 .linkedin-btn:hover {
     background: #005582;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -206,80 +252,4 @@ footer {
     color: var(--accent-color);
     transform: translateY(-4px) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6);
-}
-
-/* --- Contact Section & Icon Buttons --- */
-#contact {
-    text-align: center;
-}
-
-.contact-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px; /* Icon aur text ke beech space */
-    background: var(--accent-color);
-    color: #ffffff;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.contact-btn i {
-    font-size: 1.2rem; /* Icon size */
-}
-
-/* Specific Brand Colors */
-.email-btn {
-    background: var(--accent-color);
-}
-
-.email-btn:hover {
-    background: var(--accent-hover);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
-}
-
-.github-btn {
-    background: #24292e;
-    border-color: #444;
-}
-
-.github-btn:hover {
-    background: #2f363d;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
-}
-
-.linkedin-btn {
-    background: #0077b5;
-}
-
-.linkedin-btn:hover {
-    background: #005582;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
-}
-/* --- Resume Download Button Styling --- */
-.resume-btn {
-    background: #00b894; /* Premium Emerald Green Accent */
-    color: #ffffff;
-    border: 1px solid #55efc4;
-}
-
-.resume-btn:hover {
-    background: #009677;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
 }
