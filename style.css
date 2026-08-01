@@ -207,3 +207,67 @@ footer {
     transform: translateY(-4px) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6);
 }
+
+/* --- Contact Section & Icon Buttons --- */
+#contact {
+    text-align: center;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Icon aur text ke beech space */
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact-btn i {
+    font-size: 1.2rem; /* Icon size */
+}
+
+/* Specific Brand Colors */
+.email-btn {
+    background: var(--accent-color);
+}
+
+.email-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
+}
+
+.github-btn {
+    background: #24292e;
+    border-color: #444;
+}
+
+.github-btn:hover {
+    background: #2f363d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.linkedin-btn {
+    background: #0077b5;
+}
+
+.linkedin-btn:hover {
+    background: #005582;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+}
