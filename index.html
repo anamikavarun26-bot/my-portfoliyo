@@ -11,27 +11,39 @@
 </head>
 <body>
 
+  <!-- TOP NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-logo">&lt;/Anamika&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- HERO SECTION -->
   <header>
     <!-- ANIMATED TECH AVATAR -->
-<div class="profile-avatar">
-  <svg width="110" height="110" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Glowing Outer Animated Ring -->
-    <circle class="glowing-ring" cx="60" cy="60" r="54" stroke="#58a6ff" stroke-width="3" stroke-dasharray="8 8"/>
-    <!-- Dark Tech Circle Base -->
-    <circle cx="60" cy="60" r="46" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-    <!-- Developer Code Bracket Graphic -->
-    <path class="bracket" d="M42 46L30 60L42 74" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path class="bracket" d="M78 46L90 60L78 74" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path class="slash" d="M66 42L54 78" stroke="#3fb950" stroke-width="4" stroke-linecap="round"/>
-  </svg>
-</div>
+    <div class="profile-avatar">
+      <svg width="110" height="110" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Glowing Outer Animated Ring -->
+        <circle class="glowing-ring" cx="60" cy="60" r="54" stroke="#58a6ff" stroke-width="3" stroke-dasharray="8 8"/>
+        <!-- Dark Tech Circle Base -->
+        <circle cx="60" cy="60" r="46" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+        <!-- Developer Code Bracket Graphic -->
+        <path class="bracket" d="M42 46L30 60L42 74" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="bracket" d="M78 46L90 60L78 74" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="slash" d="M66 42L54 78" stroke="#3fb950" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+    </div>
     <h1>Anamika Varun</h1>
     <p class="tagline">Software Engineer | Full-Stack & Python Developer</p>
   </header>
 
   <!-- ABOUT SECTION -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
       Hi! I am a passionate Master of Computer Applications (MCA) student dedicated to software engineering. 
@@ -41,7 +53,7 @@
   </section>
 
   <!-- SKILLS SECTION -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Tech Stack</h2>
     <div class="skills-container">
       <span class="skill-pill">Python</span>
@@ -57,7 +69,7 @@
   </section>
 
   <!-- PROJECTS SECTION -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Featured Projects</h2>
     <div class="projects-grid">
       
@@ -127,33 +139,43 @@
     </div>
   </section>
 
-    <!-- CONTACT SECTION -->
-<section id="contact">
-  <h2>Get In Touch</h2>
-  <p>I am open to software development opportunities, internships, and project collaborations. Feel free to reach out!</p>
-  
-  <div class="contact-buttons">
-    <!-- 1. Resume Download Button -->
-    <a href="https://docs.google.com/document/d/1uPSHjTCMBG_1eh8mY8Sk5kyN0RRjTbwS2EKfGeiHwWU/edit?usp=drive_link" target="_blank" class="contact-btn resume-btn">
-      <i class="fa-solid fa-file-pdf"></i> Download Resume
-    </a>
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-card">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p class="institution">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)</p>
+      <p class="duration">Postgraduate Degree | Computer Science & Software Engineering</p>
+    </div>
+  </section>
 
-    <!-- 2. Email Button -->
-    <a href="mailto:anamika.varun@gmail.com" class="contact-btn email-btn">
-      <i class="fa-solid fa-envelope"></i> Send Email
-    </a>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <p>I am open to software development opportunities, internships, and project collaborations. Feel free to reach out!</p>
+    
+    <div class="contact-buttons">
+      <!-- 1. Resume Download Button -->
+      <a href="https://docs.google.com/document/d/1uPSHjTCMBG_1eh8mY8Sk5kyN0RRjTbwS2EKfGeiHwWU/edit?usp=drive_link" target="_blank" class="contact-btn resume-btn">
+        <i class="fa-solid fa-file-pdf"></i> Download Resume
+      </a>
 
-    <!-- 3. GitHub Button -->
-    <a href="https://github.com/anamikavarun" target="_blank" class="contact-btn github-btn">
-      <i class="fa-brands fa-github"></i> GitHub Profile
-    </a>
+      <!-- 2. Email Button -->
+      <a href="mailto:anamika.varun@gmail.com" class="contact-btn email-btn">
+        <i class="fa-solid fa-envelope"></i> Send Email
+      </a>
 
-    <!-- 4. LinkedIn Button -->
-    <a href="https://linkedin.com/in/anamikavarun" target="_blank" class="contact-btn linkedin-btn">
-      <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
-    </a>
-  </div>
-</section>
+      <!-- 3. GitHub Button -->
+      <a href="https://github.com/anamikavarun26-bot" target="_blank" class="contact-btn github-btn">
+        <i class="fa-brands fa-github"></i> GitHub Profile
+      </a>
+
+      <!-- 4. LinkedIn Button -->
+      <a href="https://linkedin.com/in/anamikavarun" target="_blank" class="contact-btn linkedin-btn">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+      </a>
+    </div>
+  </section>
 
   <footer>
     <p>© 2026 Anamika Varun. All rights reserved.</p>
